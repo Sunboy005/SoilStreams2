@@ -8,7 +8,7 @@ namespace SOILSTREAMAPI.Models.Dto
         public string UserId { get; set; }
 
         [Required]
-        public int ProductId { get; set; }
+        public string ProductId { get; set; }
 
         [Required]
         [Range(1, int.MaxValue, ErrorMessage = "The field {0} must be greater than 0.")]
@@ -16,6 +16,6 @@ namespace SOILSTREAMAPI.Models.Dto
 
         [Required]
         [Range(0.01, double.MaxValue, ErrorMessage = "The field {0} must be greater than 0.")]
-        public decimal UnitPrice { get; set; }
+        public double UnitPrice { get; set; }
     }
 }

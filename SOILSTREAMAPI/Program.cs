@@ -40,17 +40,11 @@ builder.Services.AddAuthentication(opt =>
         ValidateIssuerSigningKey = true,
         IssuerSigningKey = new SymmetricSecurityKey(Encoding.UTF8.GetBytes(builder.Configuration.GetSection("JWT:Key").Value))
     };
-}).AddGoogle(options =>
-{
-    options.ClientId = builder.Configuration.GetSection("GoogleOAUTH")["ClientId"];
-    options.ClientSecret = builder.Configuration.GetSection("GoogleOAUTH")["ClientSecret"];
 }).AddCookie();
-builder.Services.AddIdentity<User, IdentityRole>(opt =>
-    {
-        opt.SignIn.RequireConfirmedEmail = false;
-    })
-        .AddEntityFrameworkStores<SoilStreamsDbContext>()
-        .AddDefaultTokenProviders();
+// Add Identity
+builder.Services.AddIdentity<User, IdentityRole>()
+    .AddEntityFrameworkStores<SoilStreamsDbContext>()
+    .AddDefaultTokenProviders();
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
 builder.Services.AddScoped<IUserServices, UserServices>();
@@ -59,6 +53,7 @@ builder.Services.AddScoped<IStoreProductServices, StoreProductServices>();
 builder.Services.AddScoped<IAuthServices, AuthServices>();
 builder.Services.AddScoped<IOrderServices, OrderServices>();
 builder.Services.AddScoped<IJWTService, JWTService>();
+builder.Services.AddScoped<ICategoryServices, CategoryServices>();
 
 var app = builder.Build();
 

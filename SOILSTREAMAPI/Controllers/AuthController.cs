@@ -5,6 +5,7 @@ using Microsoft.EntityFrameworkCore;
 using SOILSTREAMAPI.Data;
 using SOILSTREAMAPI.Models;
 using SOILSTREAMAPI.Models.Dto;
+using SOILSTREAMAPI.Services.Implementations;
 using SOILSTREAMAPI.Services.Interfaces;
 
 namespace SOILSTREAMAPI.Controllers
@@ -14,21 +15,35 @@ namespace SOILSTREAMAPI.Controllers
     public class AuthController : ControllerBase
     {
         private readonly UserManager<User> _userManager;
-        private readonly SignInManager<User> _signInManager;
+        private readonly IAuthServices _authService;
         private readonly SoilStreamsDbContext _dbContext;
 
-        public AuthController(SoilStreamsDbContext dbContext, UserManager<User> userManager, SignInManager<User> signInManager, IAuthServices authServices)
+        public AuthController(SoilStreamsDbContext dbContext, UserManager<User> userManager, IAuthServices authServices)
         {
             _userManager = userManager;
-            _signInManager=signInManager;
             _dbContext=dbContext;
+            _authService=authServices;
         }
 
-
-       //public async Task<IActionResult>Login(AuthRequest model)
-       // {
-       //     var user= _userManager.GetUserAsync()
-       //     var login=await _signInManager.SignInAsync()
-       // }
+        [HttpPost]
+        public async Task<IActionResult> Login(AuthRequest model)
+        {
+            if (!ModelState.IsValid)
+            {
+                var response = new ResponseDto<string>()
+                {
+                    IsSuccessful = false,
+                    StatusCode = "01",
+                    StatusMessage = "User not registered"
+                };
+                return NotFound(response);
+            }
+            var login=await _authService.LoginUser(model);
+            if (login.IsSuccessful)
+            {
+                return Ok(login);
+            }
+               return BadRequest(login);
+         }
     }
 }

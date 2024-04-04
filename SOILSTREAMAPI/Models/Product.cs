@@ -5,7 +5,7 @@ namespace SOILSTREAMAPI.Models
     {
         public string Name { get; set; }
        // public string ProductCode { get; set; }
-        public string Category { get; set; }
+        public ProductCategory Category { get; set; }
         public string Description { get; set; }
         
 

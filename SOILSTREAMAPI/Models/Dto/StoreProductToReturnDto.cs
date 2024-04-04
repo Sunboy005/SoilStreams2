@@ -2,11 +2,12 @@
 {
     public class StoreProductToReturnDto
     {
-        public int Id { get; set; }
-        public int ProductId { get; set; }
-        public string ProductName { get; set; }
-        public string ProductCategory { get; set; }
+        public string Id { get; set; }
+        public string IsDeleted { get; set; }
+        public Product Product { get; set; }
+        public string StoreProductName { get; set; }
+        public ProductCategory Category { get; set; }
         public int AvailableQuantity { get; set; }
-        public decimal UnitPrice { get; set; }
+        public double UnitPrice { get; set; }
     }
 }

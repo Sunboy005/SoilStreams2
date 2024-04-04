@@ -11,7 +11,7 @@ namespace SOILSTREAMAPI.Models.Dto
         public string ProductCode { get; set; }
 
         [Required]
-        public string Category { get; set; }
+        public string CategoryId { get; set; }
 
         public string Description { get; set; }
     }

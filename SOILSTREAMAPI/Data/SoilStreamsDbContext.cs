@@ -12,21 +12,12 @@ namespace SOILSTREAMAPI.Data
             : base(options) { }
 
         public DbSet<Product> Products { get; set; }
+        public DbSet<ProductCategory> ProductCategories { get; set; }
         public DbSet<Order> Orders { get; set; }
         public DbSet<StoreProduct> StoreProducts { get; set; }
         public DbSet<Store> Stores { get; set; }
 
-        protected override void OnModelCreating(ModelBuilder modelBuilder)
-        {
-            base.OnModelCreating(modelBuilder);
-
-            // Configure the relationship without cascade delete
-            modelBuilder.Entity<SingleOrderDto>()
-                .HasOne(o => o.StoreProduct)
-                .WithMany()
-                .HasForeignKey(o => o.StoreProductId)
-                .OnDelete(DeleteBehavior.Restrict);
-        }
+        
 
     }
     
