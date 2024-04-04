@@ -1,0 +1,83 @@
+[
+  {
+    "id": "0d5a59a1-75b2-4c5d-873b-5f394cb39467",
+    "name": "Rice",
+    "description": "Do labore deserunt consequat ea culpa nostrud aliqua quis do.",
+    "ProductCode": "RIC234",
+    "Category": "Grains",
+    "CreatedBy": "Grains",
+    "DateInserted": "2021-12 -29"
+  },
+  {
+    "id": "f14a902e-1b96-40e8-a6b9-54f6837d7c60",
+    "name": "SQ002",
+    "description": "Dolor excepteur irure sint aute est nostrud nisi sit irure duis tempor.",
+    "startDate": "2021-03-07",
+    "gradDate": "2021-09-03",
+    "isGraduated": false
+  },
+  {
+    "id": "e48af6bf-0d88-4385-a304-687c82c5eb5e",
+    "name": "SQ003",
+    "description": "Excepteur tempor sit nostrud eu est non culpa velit ad id exercitation sunt consequat ad.",
+    "startDate": "2021-01-07",
+    "gradDate": "2021-12-29",
+    "isGraduated": false
+  },
+  {
+    "id": "6ad76941-af6c-44d2-8d79-1ce1d795a4cf",
+    "name": "SQ004",
+    "description": "Esse occaecat proident aute nostrud cillum qui.",
+    "startDate": "2021-04-14",
+    "gradDate": "2022-01-23",
+    "isGraduated": false
+  },
+  {
+    "id": "44a1267e-5849-4762-b214-c24e4970db6e",
+    "name": "SQ005",
+    "description": "Lorem proident adipisicing minim ut pariatur amet officia qui Lorem officia exercitation officia.",
+    "startDate": "2021-01-12",
+    "gradDate": "2021-07-31",
+    "isGraduated": true
+  },
+  {
+    "id": "ac3110f5-664f-496a-9d3e-bac25e0906c0",
+    "name": "SQ006",
+    "description": "Ex Lorem reprehenderit adipisicing ex sunt aliquip commodo voluptate tempor.",
+    "startDate": "2021-01-22",
+    "gradDate": "2021-07-20",
+    "isGraduated": true
+  },
+  {
+    "id": "a5f4c82f-3a48-4619-a34b-391da84fc628",
+    "name": "SQ007",
+    "description": "Pariatur laboris nulla ad eu consequat fugiat consequat.",
+    "startDate": "2021-05-31",
+    "gradDate": "2021-11-14",
+    "isGraduated": true
+  },
+  {
+    "id": "f5355078-fa8b-436f-b17c-1db140e4e646",
+    "name": "SQ008",
+    "description": "Enim consectetur deserunt culpa excepteur ut amet labore consectetur aliqua est.",
+    "startDate": "2021-04-21",
+    "gradDate": "2021-11-10",
+    "isGraduated": false
+  },
+  {
+    "id": "16b74bff-9002-43fc-ac85-898b551ef303",
+    "name": "SQ009",
+    "description": "Cillum eu deserunt enim eu laborum in labore esse sint adipisicing consectetur.",
+    "startDate": "2021-02-15",
+    "gradDate": "2021-11-29",
+    "isGraduated": true
+  },
+  {
+    "id": "45d27e9b-1108-4155-a10d-9f4557f82e40",
+    "name": "SQ010",
+    "description": "Quis adipisicing amet cupidatat ex in ipsum aute duis magna duis aliquip esse.",
+    "startDate": "2021-04-14",
+    "gradDate": "2021-07-31",
+    "isGraduated": false
+  }
+]

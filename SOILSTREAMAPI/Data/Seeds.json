@@ -1,0 +1,36 @@
+﻿[
+  {
+    "id": "c7458c52-b7ae-492f-a168-c370898dc22e",
+    "fullName": "Ugo Chukwu",
+    "isActive": true,
+    "email": "abideklove@gmail.com",
+    "gender": "male",
+    "address":  "Dobbin Street, Lagos, Nigeria"
+  },
+  {
+    "id": "d895c73c-e691-4cc7-bb6f-45ffd5fdad70",
+    "fullName": "Richardson Mullen",
+    "isActive": true,
+    "email": "richardsonmullen@zidant.com",
+    "gender": "male",
+    "address":  "Wolf Place, Lagos, Nigeria"
+  },
+  {
+    "id": "f456a2e7-2560-47ac-8e06-8969bd962eca",
+    "firstName": "Fernandez",
+    "lastName": "Keith",
+    "isActive": true,
+    "email": "fernandezkeith@zidant.com",
+    "gender": "male",
+    "address":  "Chester Street, Abia State, Nigeria"
+  },
+  {
+    "id": "02e3d19d-9e32-47e2-96f0-f6202b7510ef",
+    "firstName": "Anthony",
+    "lastName": "Lopez",
+    "isActive": false,
+    "email": "anthonylopez@zidant.com",
+    "gender": "male",
+    "address": "Sumpter Street Abeokuta, Ogun State, Nigeria" 
+  }
+]
